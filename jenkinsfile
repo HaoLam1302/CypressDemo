@@ -8,19 +8,19 @@ pipeline{
             parallel {
                 stage('tester A'){
                     steps{
-                        sh "npm run cy:parallel"
+                        bat "npm run cy:parallel"
                     }
                 }
 
               stage('tester B'){
                     steps{
-                        sh "npm run cy:parallel"
+                        bat "npm run cy:parallel"
                     }
                 }
 
                 stage('tester C'){
                     steps{
-                        sh "npm run cy:parallel"
+                        bat "npm run cy:parallel"
                     }
                 }
             }
