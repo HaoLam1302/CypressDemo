@@ -1,8 +1,9 @@
 pineline{
     agent any
     tools {nodejs "node"}
-
-    stages {
+    
+    try {
+        stages {
         statge('cypress paralell tests')
         parallel {
             stage('tester A'){
@@ -24,4 +25,8 @@ pineline{
             }
         }
     }
-}
+}          
+    } finally {
+        junit 'build/test-results/test/*.xml'
+    }
+    
