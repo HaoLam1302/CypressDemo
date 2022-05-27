@@ -4,23 +4,24 @@ pineline{
 
    
     stages {
-        statge('cypress paralell tests')
-        parallel {
-            stage('tester A'){
-                step{
-                    sh "npm run cy:parallel"
+        stage('cypress paralell tests'){
+            parallel {
+                stage('tester A'){
+                    step{
+                        sh "npm run cy:parallel"
+                    }
                 }
-            }
 
-           stage('tester B'){
-                step{
-                    sh "npm run cy:parallel"
+              stage('tester B'){
+                    step{
+                        sh "npm run cy:parallel"
+                    }
                 }
-            }
 
-            stage('tester C'){
-                step{
-                    sh "npm run cy:parallel"
+                stage('tester C'){
+                    step{
+                        sh "npm run cy:parallel"
+                    }
                 }
             }
         }
