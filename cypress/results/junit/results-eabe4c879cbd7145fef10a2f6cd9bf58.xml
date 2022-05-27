@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="26.6150" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-05-27T07:59:51" tests="0" file="cypress/integration/testWithPageObjects.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="First test with page object" timestamp="2022-05-27T07:59:51" tests="1" time="26.5850" failures="0">
+    <testcase name="First test with page object first test" time="26.5350" classname="first test">
+    </testcase>
+  </testsuite>
+</testsuites>

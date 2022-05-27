@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://all.accor.com/france/index.fr.shtml",
+  "ignoreTestFiles": [
+    "**/1-getting-started/*.js",
+    "**/2-advanced-examples/*.js"
+  ],
+  "viewportWidth": 1920,
+  "viewportHeight": 1024,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "env": {
+    "host": "rec2"
+  },
+  "projectId": "2yruqg"
+}
