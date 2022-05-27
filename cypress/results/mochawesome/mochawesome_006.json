@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-05-27T10:45:49.244Z",
+    "end": "2022-05-27T10:47:05.224Z",
+    "duration": 75980,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "af470dc9-7fc8-43f9-a53a-b30ca0e253c1",
+      "title": "",
+      "fullFile": "cypress/integration/firstTest.spec.js",
+      "file": "cypress/integration/firstTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4af0c7df-1972-496b-a070-eaf5f53acda6",
+          "title": "First suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check choose date in field",
+              "fullTitle": "First suite check choose date in field",
+              "timedOut": null,
+              "duration": 32840,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//input[@name='search.dateIn']\").click();\ncy.xpath(\"//*[@class='ui-datepicker-calendar']\").contains('26').click();\ncy.xpath(\"//input[@name='search.dateIn']\").should('have.value', '26/05/2022'); //  //    cy.xpath(\"//*[@class='burgerMenu__icon']\")",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-dateIn-boo.tArrivalDate.hasDatepicker>' to have value '26/05/2022', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-dateIn-boo.tArrivalDate.hasDatepicker>' to have value '26/05/2022', but the value was ''\n    at Context.eval (https://all.accor.com/__cypress/tests?p=cypress\\integration\\firstTest.spec.js:112:48)",
+                "diff": "+ '26/05/2022'\n"
+              },
+              "uuid": "a7f88459-1f4d-4d80-b36b-aa62ed89efd1",
+              "parentUUID": "4af0c7df-1972-496b-a070-eaf5f53acda6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check click with list",
+              "fullTitle": "First suite check click with list",
+              "timedOut": null,
+              "duration": 13622,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//*[@class='burgerMenu__icon']\").click();\ncy.xpath(\"//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]\").then(menuLV1 => {\n  cy.wrap(menuLV1).first().trigger('mouseover').click();\n  cy.wrap(menuLV1).eq(2).trigger('mouseover');\n});",
+              "err": {},
+              "uuid": "cd20bac7-d483-41c4-b773-136799454c20",
+              "parentUUID": "4af0c7df-1972-496b-a070-eaf5f53acda6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check click with list2",
+              "fullTitle": "First suite check click with list2",
+              "timedOut": null,
+              "duration": 12530,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//*[@class='burgerMenu__icon']\").click();\ncy.xpath(\"//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]\").then(menuLV1 => {\n  cy.wrap(menuLV1).first().trigger('mouseover').click();\n  cy.wrap(menuLV1).eq(2).trigger('mouseover');\n});",
+              "err": {},
+              "uuid": "e724120d-5c93-4bbc-897c-15638d86d8f8",
+              "parentUUID": "4af0c7df-1972-496b-a070-eaf5f53acda6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check click with list 3",
+              "fullTitle": "First suite check click with list 3",
+              "timedOut": null,
+              "duration": 16583,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//*[@class='burgerMenu__icon']\").click();\ncy.xpath(\"//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]\").then(menuLV1 => {\n  cy.wrap(menuLV1).first().trigger('mouseover').click();\n  cy.wrap(menuLV1).eq(2).trigger('mouseover');\n});",
+              "err": {},
+              "uuid": "e403b358-9fb4-4ac3-a34d-9986272296eb",
+              "parentUUID": "4af0c7df-1972-496b-a070-eaf5f53acda6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cd20bac7-d483-41c4-b773-136799454c20",
+            "e724120d-5c93-4bbc-897c-15638d86d8f8",
+            "e403b358-9fb4-4ac3-a34d-9986272296eb"
+          ],
+          "failures": [
+            "a7f88459-1f4d-4d80-b36b-aa62ed89efd1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 75575,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
