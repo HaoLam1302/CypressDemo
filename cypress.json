@@ -13,12 +13,7 @@
     "configFile": "reporter-config.json"
   },
   "env": {
-    "host": "rec2",
-    "cypress-plugin-snapshots": {
-      "imageconfig": {
-        "threshold": 0.01
-      }
-    }
+    "host": "rec2"
   },
   "projectId": "x5547c"
 }
