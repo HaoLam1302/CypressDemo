@@ -33,7 +33,6 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
   //require('cypress-plugin-retries/lib/plugin')(off)
   const file = config.env.configFile
-  initPlugin(on, config)
 
   return getConfigurationByFile(file)
 }
