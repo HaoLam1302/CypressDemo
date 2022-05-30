@@ -13,7 +13,10 @@
     "configFile": "reporter-config.json"
   },
   "env": {
-    "host": "rec2"
+    "host": "rec2",
+    "cypress-plugin-snapshots": {
+      "serverPort": 3000
+    }
   },
   "projectId": "x5547c"
 }
