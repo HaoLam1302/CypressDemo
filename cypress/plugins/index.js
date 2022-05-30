@@ -27,7 +27,6 @@ function getConfigurationByFile(file) {
   return fs.readJson(pathToConfigFile)
 }
 
-const { initPlugin } = require('cypress-plugin-snapshots/plugin');
 
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
@@ -36,5 +35,5 @@ module.exports = (on, config) => {
   const file = config.env.configFile
   initPlugin(on, config)
 
-  return getConfigurationByFile(file), config
+  return getConfigurationByFile(file)
 }
