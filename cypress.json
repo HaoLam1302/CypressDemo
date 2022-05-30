@@ -2,7 +2,9 @@
   "baseUrl": "https://all.accor.com/france/index.fr.shtml",
   "ignoreTestFiles": [
     "**/1-getting-started/*.js",
-    "**/2-advanced-examples/*.js"
+    "**/2-advanced-examples/*.js",
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
   ],
   "viewportWidth": 1920,
   "viewportHeight": 1024,
@@ -11,7 +13,11 @@
     "configFile": "reporter-config.json"
   },
   "env": {
-    "host": "rec2"
-  },
-  "projectId": "2yruqg"
+    "host": "rec2",
+    "cypress-plugin-snapshots": {
+      "imageconfig": {
+        "threshold": 0.01
+      }
+    }
+  }
 }

@@ -27,11 +27,14 @@ function getConfigurationByFile(file) {
   return fs.readJson(pathToConfigFile)
 }
 
+const { initPlugin } = require('cypress-plugin-snapshots/plugin');
+
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
   //require('cypress-plugin-retries/lib/plugin')(off)
   const file = config.env.configFile
+  initPlugin(on, config)
 
-  return getConfigurationByFile(file)
+  return getConfigurationByFile(file), config
 }

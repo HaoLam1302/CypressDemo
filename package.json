@@ -56,7 +56,8 @@
     "concat-map": "^0.0.1",
     "core-util-is": "^1.0.2",
     "cross-spawn": "^7.0.3",
-    "cypress-parallel": "^0.9.0",
+    "cypress-parallel": "^0.1.8",
+    "cypress-plugin-snapshots": "^1.4.4",
     "dashdash": "^1.14.1",
     "dayjs": "^1.11.2",
     "debug": "^4.3.4",
@@ -180,7 +181,7 @@
     "prereport": "npm run delete:reports",
     "run:test": "npm run prereport && npm run cy:run_browser && npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
     "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
-    "cy:run_spec": "npx cypress run --headed --spec 'cypress/integration/*.js' --record --key 1a64c77f-1a39-4752-a213-80b69def0d6c --parallel",
+    "cy:run_spec": "npx cypress run --headed --spec 'cypress/integration/*.js' --record --key 1a64c77f-1a39-4752-a213-80b69def0d6c",
     "cy:run_browser": "npm run cy:run_spec -- --browser edge --group Firefox --ci-build-id 3 & npm run cy:run_spec -- --browser chrome --group Chrome --ci-build-id 3"
   },
   "author": "",

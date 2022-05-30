@@ -1,28 +1,24 @@
 pipeline{
     agent any
     tools {nodejs "node"}
-
-   
+    bat "npm install cypress --save-dev"
     stages {
         stage('cypress paralell tests'){
             parallel {
                 stage('tester A'){
-                    steps{
-                        bat "npm install cypress --save-dev"
+                    step
                         bat "npm run cy:parallel"
                     }
                 }
 
               stage('tester B'){
                     steps{
-                        bat "npm install cypress --save-dev"
                         bat "npm run cy:parallel"
                     }
                 }
 
                 stage('tester C'){
                     steps{
-                        bat "npm install cypress --save-dev"
                         bat "npm run cy:parallel"
                     }
                 }
