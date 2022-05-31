@@ -43,3 +43,10 @@ Cypress.Commands.add('isElementExist',(selector) => {
              //Cy wrap is needed so the function is chainable
          })
 })
+
+Cypress.Commands.add('getElement', xpath => {
+    return cy.xpath(xpath)
+    .then( menuLV1 =>{
+       cy.wrap(menuLV1);
+    })
+})
