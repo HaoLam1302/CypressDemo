@@ -176,7 +176,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cypress open",
     "cy:run": "cypress run",
-    "cy:parallel": "npx cypress run --headed --spec 'cypress/integration/*.js' -- --browser chrome --record --key f10a0ad3-c138-477d-9d17-03a4b9e81e89 --parallel",
+    "cy:parallel": "npm run prereport && npx cypress run --headed --spec 'cypress/integration/*.js' --record --key f10a0ad3-c138-477d-9d17-03a4b9e81e89 -- --browser chrome --parallel",
     "delete:reports": "del cypress\\results\\junit/Q && del cypress\\results\\mochawesome/Q",
     "prereport": "npm run delete:reports",
     "create:report": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
