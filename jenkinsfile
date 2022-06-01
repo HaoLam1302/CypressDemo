@@ -7,6 +7,7 @@ pipeline{
             parallel {
                 stage('tester A'){
                     steps{
+                        bat "npm install cypress --save-dev"
                         bat "npm run cy:parallel"
                     }
                 }
