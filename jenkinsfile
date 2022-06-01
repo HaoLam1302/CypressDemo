@@ -7,19 +7,19 @@ pipeline{
             parallel {
                 stage('tester A'){
                     steps{
-                        bat "NO_COLOR=1 npm run cy:parallel"
+                        bat "npm run cy:parallel"
                     }
                 }
 
                  stage('tester B'){
                     steps{
-                        bat "NO_COLOR=1 npm run cy:parallel"
+                        bat "npm run cy:parallel"
                     }
                 }
 
                 stage('tester C'){
                     steps{
-                        bat "NO_COLOR=1 npm run cy:parallel"
+                        bat "npm run cy:parallel"
                     }
                 }
             }
