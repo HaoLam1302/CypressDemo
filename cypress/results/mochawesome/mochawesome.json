@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 6,
-    "passes": 5,
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
     "pending": 0,
     "failures": 1,
-    "start": "2022-06-01T04:05:05.419Z",
-    "end": "2022-06-01T04:08:12.160Z",
-    "duration": 144388,
-    "testsRegistered": 6,
-    "passPercent": 83.33333333333333,
+    "start": "2022-06-01T04:30:58.405Z",
+    "end": "2022-06-01T04:32:33.131Z",
+    "duration": 94726,
+    "testsRegistered": 4,
+    "passPercent": 75,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,123 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a8c74d71-d512-4951-a99c-0177e7949c20",
-      "title": "",
-      "fullFile": "cypress/integration/testDataDriven.spec.js",
-      "file": "cypress/integration/testDataDriven.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "587e5f64-32c3-4f6a-8507-a74c5f284827",
-          "title": "First test with page object",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "first test",
-              "fullTitle": "First test with page object first test",
-              "timedOut": null,
-              "duration": 34239,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_searchEngine.searchEngine.fillDestination(this.signInData.destination);",
-              "err": {},
-              "uuid": "dd8521bd-f965-4ef9-bbe5-866e364ea52b",
-              "parentUUID": "587e5f64-32c3-4f6a-8507-a74c5f284827",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "dd8521bd-f965-4ef9-bbe5-866e364ea52b"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 34239,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "10b2c6b9-6959-4190-a5bc-1a908a4097cf",
-      "title": "",
-      "fullFile": "cypress/integration/testWithPageObjects.js",
-      "file": "cypress/integration/testWithPageObjects.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "bd22977c-d1bb-4dbc-9ac2-fcd816ac73d3",
-          "title": "First test with page object",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "first test",
-              "fullTitle": "First test with page object first test",
-              "timedOut": null,
-              "duration": 29387,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_navigateComponent.navigationComponent.openBurgerMenu();\n_navigateComponent.navigationComponent.openFirstLinkInBurgerMenu();",
-              "err": {},
-              "uuid": "89790588-7545-4b79-9497-13ce63c4dd61",
-              "parentUUID": "bd22977c-d1bb-4dbc-9ac2-fcd816ac73d3",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "89790588-7545-4b79-9497-13ce63c4dd61"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 29387,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "7d669014-2b87-406f-83df-2771ad842eea",
+      "uuid": "a45fa491-af2b-4226-8888-419a9944a2c1",
       "title": "",
       "fullFile": "cypress/integration/firstTest.spec.js",
       "file": "cypress/integration/firstTest.spec.js",
@@ -143,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b3e8a475-c7cd-413d-a1a1-b6fbf5d032b4",
+          "uuid": "a5578b43-6415-4d15-a7af-1a28f53deffc",
           "title": "First suite",
           "fullFile": "",
           "file": "",
@@ -154,7 +38,7 @@
               "title": "check choose date in field",
               "fullTitle": "First suite check choose date in field",
               "timedOut": null,
-              "duration": 31475,
+              "duration": 38667,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -167,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-dateIn-boo.tArrivalDate.hasDatepicker>' to have value '26/05/2022', but the value was '26/06/2022'\n    at Context.eval (https://all.accor.com/__cypress/tests?p=cypress\\integration\\firstTest.spec.js:112:48)",
                 "diff": "- '26/06/2022'\n+ '26/05/2022'\n"
               },
-              "uuid": "4e7144b4-d151-49a4-8947-7a5ca816357a",
-              "parentUUID": "b3e8a475-c7cd-413d-a1a1-b6fbf5d032b4",
+              "uuid": "97b6999d-911e-4a7c-a345-fbc733ed20de",
+              "parentUUID": "a5578b43-6415-4d15-a7af-1a28f53deffc",
               "isHook": false,
               "skipped": false
             },
@@ -176,7 +60,7 @@
               "title": "check click with list",
               "fullTitle": "First suite check click with list",
               "timedOut": null,
-              "duration": 13159,
+              "duration": 17034,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -185,8 +69,8 @@
               "context": null,
               "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//*[@class='burgerMenu__icon']\").click();\ncy.xpath(\"//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]\").then(menuLV1 => {\n  cy.wrap(menuLV1).first().trigger('mouseover').click();\n  cy.wrap(menuLV1).eq(2).trigger('mouseover');\n});",
               "err": {},
-              "uuid": "f73a5b44-7e89-4cc5-9c8a-7547a2a90e03",
-              "parentUUID": "b3e8a475-c7cd-413d-a1a1-b6fbf5d032b4",
+              "uuid": "d2e877c3-ec28-4e53-a37b-952092f2972a",
+              "parentUUID": "a5578b43-6415-4d15-a7af-1a28f53deffc",
               "isHook": false,
               "skipped": false
             },
@@ -194,7 +78,7 @@
               "title": "check click with list2",
               "fullTitle": "First suite check click with list2",
               "timedOut": null,
-              "duration": 21542,
+              "duration": 22656,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -203,8 +87,8 @@
               "context": null,
               "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//*[@class='burgerMenu__icon']\").click();\ncy.xpath(\"//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]\").then(menuLV1 => {\n  cy.wrap(menuLV1).first().trigger('mouseover').click();\n});",
               "err": {},
-              "uuid": "724b39bd-69ce-443e-846d-907979c4766d",
-              "parentUUID": "b3e8a475-c7cd-413d-a1a1-b6fbf5d032b4",
+              "uuid": "b6f6c1df-40d1-42a8-8d8c-4f7b208f7dbf",
+              "parentUUID": "a5578b43-6415-4d15-a7af-1a28f53deffc",
               "isHook": false,
               "skipped": false
             },
@@ -212,7 +96,7 @@
               "title": "check click with list 3",
               "fullTitle": "First suite check click with list 3",
               "timedOut": null,
-              "duration": 14586,
+              "duration": 16164,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -221,24 +105,24 @@
               "context": null,
               "code": "cy.visit('https://rec2-all.accor.com/france/index.fr.shtml');\ncy.xpath(\"//button[@id='onetrust-accept-btn-handler']\").then(acceptCookies => {\n  if (cy.wrap(acceptCookies).should('be.visible')) {\n    cy.wrap(acceptCookies).click();\n  }\n});\ncy.xpath(\"//*[@class='burgerMenu__icon']\").click();\ncy.xpath(\"//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]\").then(menuLV1 => {\n  cy.wrap(menuLV1).first().trigger('mouseover').click();\n  cy.wrap(menuLV1).eq(2).trigger('mouseover');\n});",
               "err": {},
-              "uuid": "dcf2b4ae-d864-4dc1-9edb-125226c8b70b",
-              "parentUUID": "b3e8a475-c7cd-413d-a1a1-b6fbf5d032b4",
+              "uuid": "fb094ad2-5cb6-4c94-be71-b68c75adbe88",
+              "parentUUID": "a5578b43-6415-4d15-a7af-1a28f53deffc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f73a5b44-7e89-4cc5-9c8a-7547a2a90e03",
-            "724b39bd-69ce-443e-846d-907979c4766d",
-            "dcf2b4ae-d864-4dc1-9edb-125226c8b70b"
+            "d2e877c3-ec28-4e53-a37b-952092f2972a",
+            "b6f6c1df-40d1-42a8-8d8c-4f7b208f7dbf",
+            "fb094ad2-5cb6-4c94-be71-b68c75adbe88"
           ],
           "failures": [
-            "4e7144b4-d151-49a4-8947-7a5ca816357a"
+            "97b6999d-911e-4a7c-a345-fbc733ed20de"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 80762,
+          "duration": 94521,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

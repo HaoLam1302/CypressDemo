@@ -45,7 +45,6 @@ describe("First suite",() =>{
       cy.xpath("//*[contains(@class,'link-navigation__menu__link') and not(contains(@data-href,'my-bookings'))]")
          .then( menuLV1 =>{
             cy.wrap(menuLV1).first().trigger('mouseover').click()
-            cy.wrap(menuLV1).eq(2).trigger('mouseover')
       })
    })
 

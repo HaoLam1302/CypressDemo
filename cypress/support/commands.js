@@ -45,8 +45,7 @@ Cypress.Commands.add('isElementExist',(selector) => {
 })
 
 Cypress.Commands.add('getElement', xpath => {
-    return cy.xpath(xpath)
-    .then( menuLV1 =>{
-       cy.wrap(menuLV1);
+    return cy.xpath(xpath).then( actualXpath =>{
+       cy.wrap(actualXpath);
     })
 })

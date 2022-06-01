@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="94.7260" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-06-01T04:30:58" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="First suite" timestamp="2022-06-01T04:30:58" tests="4" time="94.7030" failures="1">
+    <testcase name="First suite check choose date in field" time="0.0000" classname="check choose date in field">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;input#search-dateIn-boo.tArrivalDate.hasDatepicker&gt;&apos; to have value &apos;26/05/2022&apos;, but the value was &apos;26/06/2022&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<input#search-dateIn-boo.tArrivalDate.hasDatepicker>' to have value '26/05/2022', but the value was '26/06/2022'
+    at Context.eval (https://all.accor.com/__cypress/tests?p=cypress\integration\firstTest.spec.js:112:48)]]></failure>
+    </testcase>
+    <testcase name="First suite check click with list" time="17.0340" classname="check click with list">
+    </testcase>
+    <testcase name="First suite check click with list2" time="22.6560" classname="check click with list2">
+    </testcase>
+    <testcase name="First suite check click with list 3" time="16.1640" classname="check click with list 3">
+    </testcase>
+  </testsuite>
+</testsuites>
