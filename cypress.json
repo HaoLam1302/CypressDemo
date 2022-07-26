@@ -13,9 +13,8 @@
     "configFile": "reporter-config.json"
   },
   "env": {
-    "host": "rec2"
-    
+    "host": "rec1"
   },
   "nodeVersion": "system",
-  "projectId": "x5547c"
+  "projectId": "btj1w4"
 }

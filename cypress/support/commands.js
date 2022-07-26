@@ -25,7 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('openAccorHomePage',()=>{
-    cy.visit('https://' + Cypress.env('host') +'-all.accor.com/france/index.fr.shtml')
+    cy.visit('https://' + Cypress.env('host') +'-all.accor.com/france/index.fr.shtml', {failOnStatusCode:false})
 })
 
 Cypress.Commands.add('acceptCookies',()=>{
